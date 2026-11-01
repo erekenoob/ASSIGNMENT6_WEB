@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Image Gallery</a>
+    </nav>
+
+    <div class="container">
+        <h1>Animations</h1>
+
+        <div class="task-card">
+            <h3>Basic Animation</h3>
+            <button id="btn-anim-basic">Increase Size and Move</button>
+            <button id="btn-reset1">Reset</button>
+            <div class="anim-area">
+                <div id="box1" class="box"></div>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h3>Sequential Animations</h3>
+            <button id="btn-anim-seq">Start Sequence (Right > Down > Shrink > Return)</button>
+            <div class="anim-area">
+                <div id="box2" class="box" style="background-color: #27ae60;"></div>
+            </div>
+        </div>
+
+        <div class="task-card">
+            <h3>Combined Animation</h3>
+            <button id="btn-anim-comb">Combine Opacity, Size and Move</button>
+            <button id="btn-reset3">Reset</button>
+            <div class="anim-area">
+                <div id="box3" class="box" style="background-color: #8e44ad;"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

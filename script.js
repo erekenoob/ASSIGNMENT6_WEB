@@ -94,5 +94,43 @@ $(document).ready(function() {
         $("#out-email").text(emailValue);
     });
 
-   
+    //animation
+    //.animate function 
+    $("#btn-anim-basic").click(function() {
+        $("#box1").animate({
+            left: "150px",
+            width: "110px",
+            height: "110px"
+        }, 600);
+    });
+
+    $("#btn-reset1").click(function() {
+        $("#box1").animate({ left: "0px", width: "70px", height: "70px" }, 400);
+    });
+
+    //.animate stap by ste
+    $("#btn-anim-seq").click(function() {
+        $("#box2")
+            .animate({ left: "150px" }, 500) //right
+            .animate({ top: "70px" }, 500) //down
+            .animate({ width: "40px", height: "40px" }, 500) //shrink
+            .animate({ left: "0px", top: "0px", width: "70px", height: "70px" }, 500); //return
+    });
+
+    //combo
+    $("#btn-anim-comb").click(function() {
+        $("#box3").animate({
+            left: "180px",
+            opacity: 0.4,
+            width: "120px",
+            height: "120px"
+        }, 800);
+    });
+
+    $("#btn-reset3").click(function() {
+        $("#box3").animate({ left: "0px", opacity: 1, width: "70px", height: "70px" }, 400);
+    });
+
+    
+
 });
