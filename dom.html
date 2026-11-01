@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Image Gallery</a>
+    </nav>
+
+    <div class="container">
+        <h1>DOM Manipulation</h1>
+
+        <div class="task-card">
+            <h3>Add and Remove Elements</h3>
+            <ul id="item-list">
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ul>
+            <button id="btn-append">Add Item .append</button>
+            <button id="btn-prepend">Add Start .prepend</button>
+            <button id="btn-remove">Remove Last .remove</button>
+        </div>
+
+        <div class="task-card">
+            <h3>Modifying Attributes</h3>
+            <img id="attr-img" src="photo/Снимок экрана 2026-11-01 163014.png" width="350" alt="Picture" style="display:block; margin-bottom:10px; border-radius:4px;">
+            <button id="btn-change-img">Change Image src</button>
+            <hr>
+            <p><a id="attr-link" href="https://google.com" target="_blank">Go to Google</a></p>
+            <button id="btn-change-link">Change Link to my Instagram</button>
+        </div>
+
+        <div class="task-card">
+            <h3>Form Interaction</h3>
+            <form>
+                <label>Name:</label>
+                <input type="text" id="input-name" placeholder="Type your name">
+                <label>Email:</label>
+                <input type="email" id="input-email" placeholder="Type your email">
+            </form>
+            <p><b>Live Name:</b> <span id="out-name"></span></p>
+            <p><b>Live Email:</b> <span id="out-email"></span></p>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
