@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="index.html">Selectors</a>
+        <a href="effects.html">Effects</a>
+        <a href="dom.html">DOM</a>
+        <a href="animations.html">Animations</a>
+        <a href="gallery.html">Image Gallery</a>
+    </nav>
+
+    <div class="container">
+        <h1>Interactive Image Gallery</h1>
+
+        <div class="task-card">
+            <h3>Click a thumbnail to fade & enlarge</h3>
+            
+            //secendary picture
+            <div class="thumbnails">
+                <img class="thumb" src="photo/Без названия (4).jpg" alt="Mountains">
+                <img class="thumb" src="photo/Сплошной Красный.jpg" alt="Dog">
+                <img class="thumb" src="photo/Neon green iPhone Case.jpg" alt="Waterfall">
+                <img class="thumb" src="photo/фиолетовый фон.jpg" alt="Forest">
+            </div>
+            //main picture
+            <img id="main-image" src="photo/Без названия (4).jpg" alt="Main View">
+            <br>
+            <button id="btn-enlarge">Enlarge Image (.animate)</button>
+            <button id="btn-normal">Normal Size</button>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,4 +1,3 @@
-// Wait until the document is ready
 $(document).ready(function() {
     console.log("jQuery is ready!");
 
@@ -131,6 +130,31 @@ $(document).ready(function() {
         $("#box3").animate({ left: "0px", opacity: 1, width: "70px", height: "70px" }, 400);
     });
 
-    
+    //image gallery
+    //fade out change src fade in and enlarge
+    $(".thumb").click(function() {
+        var newSrc = $(this).attr("src"); //take a link of picture
+
+        //hide main picture and paste a picture which i click
+        $("#main-image").fadeOut(250, function() {
+            $("#main-image").attr("src", newSrc);
+            $("#main-image").fadeIn(250);
+        });
+    });
+
+    //change a size of picture
+    $("#btn-enlarge").click(function() {
+        $("#main-image").animate({
+            width: "500px",
+            height: "330px"
+        }, 500);
+    });
+
+    $("#btn-normal").click(function() {
+        $("#main-image").animate({
+            width: "350px",
+            height: "230px"
+        }, 500);
+    });
 
 });
